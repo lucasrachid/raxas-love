@@ -46,13 +46,17 @@ function ConfirmationScreen() {
         setIsAudioStarted(true);
     };
 
+    const handleConfirmClick = () => {
+        alert("Amor está no ar <3 @rachid_martins");
+    };
+
     return (
         <div className="container" onClick={startAudio}>
             <img src="/img/bob-sponja.jpg" alt="Bob Sponja" className="banner-image" />
             <h1>Hey Ana, vamos tirar o atraso de 3 anos sem flertar ? (Longe de mim, ser cara de pau)</h1>
             <h1>Te amo vida</h1>
             <div className="buttons">
-                <button className="confirm">
+                <button className="confirm" onClick={handleConfirmClick}>
                     Vamo beijaaaa!
                 </button>
                 <button
